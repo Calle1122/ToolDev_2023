@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16d60cb1b2bd82438f171dc8ba1c3f9, type: 3}
+  m_Name: ShipSettings
+  m_EditorClassIdentifier: 
+  health: {fileID: 11400000, guid: 7bb544849b6037145ac876cb27c90484, type: 2}
+  damage: {fileID: 11400000, guid: f898298fdbeb2124b8c9b0b0a726ed4e, type: 2}
+  moveSpeed: {fileID: 11400000, guid: e10833dd4f7127445b6d6d393083d13d, type: 2}
+  rotationSpeed: {fileID: 11400000, guid: ec76ceca4e72f51478e7485e5a73c0f3, type: 2}
