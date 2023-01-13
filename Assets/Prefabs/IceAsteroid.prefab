@@ -11,12 +11,11 @@ GameObject:
   - component: {fileID: 3314186860135275699}
   - component: {fileID: 3314186860135275698}
   - component: {fileID: 8253421263115497556}
-  - component: {fileID: 8406748026536496107}
   - component: {fileID: 6513951304318412364}
   - component: {fileID: 5940183773942904342}
   m_Layer: 0
-  m_Name: Asteroid
-  m_TagString: Asteroid
+  m_Name: IceAsteroid
+  m_TagString: IceAsteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e7a14865dbb575e4690c27617f63a313, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 79f960782eb2ddf4c9fabd5d64e06fbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -120,24 +119,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.05, y: -0.05}
   serializedVersion: 2
-  m_Radius: 0.75
---- !u!114 &8406748026536496107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3314186860135275697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 090acce8e746c4546af4b384b13f62db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  asteroidSettings: {fileID: 11400000, guid: e5e8dce0418b56347a0a430f5e74aa97, type: 2}
-  takeDamageEvent: {fileID: 11400000, guid: e3f1263bf7cf369449c6bc65df603d49, type: 2}
-  asteroidDestroyed: {fileID: 11400000, guid: 39e8a8a2fa2daea43a319c17a58e5a95, type: 2}
+  m_Radius: 0.85
 --- !u!50 &6513951304318412364
 Rigidbody2D:
   serializedVersion: 4
@@ -197,6 +181,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.05, y: -0.05}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 1.15

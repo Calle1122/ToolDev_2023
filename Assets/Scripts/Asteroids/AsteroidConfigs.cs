@@ -3,17 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class ShipConfigs : ScriptableObject
+public class AsteroidConfigs : ScriptableObject
 {
-
     public IntVariable health;
-    
-    public IntVariable damage;
-    public FloatVariable laserSpeed;
-    public FloatVariable laserMaxSpeed;
-    
-    public FloatVariable moveSpeed;
+
+    public FloatVariable launchSpeed;
     public FloatVariable maxSpeed;
     public FloatVariable rotationSpeed;
-
 }

@@ -36,6 +36,9 @@ public class Ship : MonoBehaviour
         {
             SteerRight();
         }
+
+        _rigidbody.velocity = Vector2.ClampMagnitude(_rigidbody.velocity, shipSettings.maxSpeed.RuntimeValue);
+
     }
 
     private void Awake()
