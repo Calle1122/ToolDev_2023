@@ -6,19 +6,27 @@ using UnityEngine;
 
 public class ScreenUI : MonoBehaviour
 {
-
     [SerializeField] private ShipConfigs shipSettings;
 
-    [SerializeField] private TextMeshProUGUI healthTxt;
+    [SerializeField] private TextMeshProUGUI healthTxt, scoreTxt;
 
+    private int _score = 0;
+    
     private void Start()
     {
         UpdateHealthTxt();
+        scoreTxt.text = "Score: " + _score;
     }
 
     public void UpdateHealthTxt()
     {
-        Debug.Log("Updating Health to " + shipSettings.health.RuntimeValue);
         healthTxt.text = "Health: " + shipSettings.health.RuntimeValue;
+    }
+
+    public void AddScore()
+    {
+        _score += 10;
+
+        scoreTxt.text = "Score: " + _score;
     }
 }

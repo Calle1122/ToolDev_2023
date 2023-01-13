@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c8158056412cff4dbc1ec9f61c67959, type: 3}
-  m_Name: SecondsBetweenSpawn
+  m_Name: IceLaunchSpeed
   m_EditorClassIdentifier: 
-  initialValue: 1.5
+  initialValue: 3

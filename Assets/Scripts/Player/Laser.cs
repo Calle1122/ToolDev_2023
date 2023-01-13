@@ -47,6 +47,7 @@ public class Laser : MonoBehaviour
             
             case "IceAsteroid":
                 //Ice stuff
+                col.GetComponent<IceAsteroid>().DoIce();
                 
                 //Destroy
                 Destroy(col.gameObject);

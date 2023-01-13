@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7336ad5a6487644c8517a21e517b134, type: 3}
+  m_Name: IceAsteroid
+  m_EditorClassIdentifier: 
+  health: {fileID: 11400000, guid: c5182e8269c8b804588f0d8cf911e177, type: 2}
+  launchSpeed: {fileID: 11400000, guid: 8e7955d0674001c43a382cc16a77adf9, type: 2}
+  maxSpeed: {fileID: 11400000, guid: 7c2df7bd809e17c45a464422d132ab87, type: 2}
+  rotationSpeed: {fileID: 11400000, guid: 170a686cd3537f54cb80e0e8879cb6e3, type: 2}

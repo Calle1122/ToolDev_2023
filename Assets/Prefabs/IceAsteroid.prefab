@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8253421263115497556}
   - component: {fileID: 6513951304318412364}
   - component: {fileID: 5940183773942904342}
+  - component: {fileID: 3599324667980172879}
   m_Layer: 0
   m_Name: IceAsteroid
   m_TagString: IceAsteroid
@@ -184,3 +185,21 @@ CircleCollider2D:
   m_Offset: {x: -0.05, y: -0.05}
   serializedVersion: 2
   m_Radius: 1.15
+--- !u!114 &3599324667980172879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314186860135275697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbeb8cc7e3c269b4bbd27e1b7c92720a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroidSettings: {fileID: 11400000, guid: efbcb89b069f8254091bfa02b3795cee, type: 2}
+  asteroidDestroyed: {fileID: 11400000, guid: 39e8a8a2fa2daea43a319c17a58e5a95, type: 2}
+  takeDamageEvent: {fileID: 11400000, guid: e3f1263bf7cf369449c6bc65df603d49, type: 2}
+  icePlosionParticle: {fileID: 8022750425248081878, guid: 57d19647bce22f44891775f6744ca9d6, type: 3}
+  underIceParticle: {fileID: 2703172913356520784, guid: 55250f1c2f381fc4fa20c08db41b852d, type: 3}
+  iceRadius: {fileID: 6220611662399805453, guid: 2bc945e6d84be2448862b1e9965f40ef, type: 3}

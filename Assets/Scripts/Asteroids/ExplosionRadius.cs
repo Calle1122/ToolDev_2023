@@ -29,13 +29,15 @@ public class ExplosionRadius : MonoBehaviour
                 col.GetComponent<FireAsteroid>().KillFireAsteroid();
                 break;
             
-            /*case "IceAsteroid":
-
-                break;*/
+            case "IceAsteroid":
+                col.GetComponent<IceAsteroid>().KillIceAsteroid();
+                break;
             
             default:
                 Destroy(col.gameObject);
                 break;
         }
+        
+        GetComponent<CircleCollider2D>().enabled = false;
     }
 }

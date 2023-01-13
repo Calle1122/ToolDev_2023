@@ -7,6 +7,8 @@ public class FireAsteroid : AsteroidBase
 {
 
     [SerializeField] private GameObject explosionParticle, underExplosionParticle, explosionRadius;
+
+    public bool hasTransformed = false;
     
     protected override void OnCollideWithPlayer()
     {
