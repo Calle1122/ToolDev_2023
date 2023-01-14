@@ -136,8 +136,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidSettings: {fileID: 11400000, guid: e5e8dce0418b56347a0a430f5e74aa97, type: 2}
-  takeDamageEvent: {fileID: 11400000, guid: e3f1263bf7cf369449c6bc65df603d49, type: 2}
   asteroidDestroyed: {fileID: 11400000, guid: 39e8a8a2fa2daea43a319c17a58e5a95, type: 2}
+  takeDamageEvent: {fileID: 11400000, guid: e3f1263bf7cf369449c6bc65df603d49, type: 2}
+  dirtParticle: {fileID: 2926423960691444210, guid: 30b21b03a4f641c4b9b3d5b0ce84278a, type: 3}
 --- !u!50 &6513951304318412364
 Rigidbody2D:
   serializedVersion: 4

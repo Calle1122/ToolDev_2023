@@ -21,9 +21,12 @@ public class ExplosionRadius : MonoBehaviour
                 takeDamageEvent.Raise();
                 break;
             
-            /*case "Asteroid":
+            case "Asteroid":
 
-                break;*/
+                col.GetComponent<NormalAsteroid>().SpawnDirt();
+                Destroy(col.gameObject);
+
+                break;
             
             case "FireAsteroid":
                 col.GetComponent<FireAsteroid>().KillFireAsteroid();

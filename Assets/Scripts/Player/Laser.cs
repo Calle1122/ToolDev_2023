@@ -30,7 +30,8 @@ public class Laser : MonoBehaviour
         {
             case "Asteroid":
                 //Normal Stuff
-                
+                col.GetComponent<NormalAsteroid>().SpawnDirt();
+
                 //Destroy
                 Destroy(col.gameObject);
                 Destroy(gameObject);

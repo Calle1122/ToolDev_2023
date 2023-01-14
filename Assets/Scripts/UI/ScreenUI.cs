@@ -8,7 +8,9 @@ public class ScreenUI : MonoBehaviour
 {
     [SerializeField] private ShipConfigs shipSettings;
 
-    [SerializeField] private TextMeshProUGUI healthTxt, scoreTxt;
+    [SerializeField] private TextMeshProUGUI healthTxt, scoreTxt, gameOverScoreTxt;
+
+    [SerializeField] private GameObject gameOverContainer;
 
     private int _score = 0;
     
@@ -28,5 +30,18 @@ public class ScreenUI : MonoBehaviour
         _score += 10;
 
         scoreTxt.text = "Score: " + _score;
+    }
+
+    public void OnGameOver()
+    {
+        healthTxt.enabled = false;
+        scoreTxt.enabled = false;
+        
+        gameOverContainer.SetActive(true);
+    }
+
+    public void SetGameOverScore()
+    {
+        gameOverScoreTxt.text = "Final Score: " + _score;
     }
 }

@@ -17,7 +17,6 @@ public class IceRadius : MonoBehaviour
                 col.GetComponent<Rigidbody2D>().velocity *= 0.0001f;
                 break;
 
-            
             case "FireAsteroid":
 
                 if (col.GetComponent<FireAsteroid>().hasTransformed == false)

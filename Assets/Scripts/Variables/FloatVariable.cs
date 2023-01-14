@@ -16,6 +16,11 @@ public class FloatVariable : ScriptableObject, ISerializationCallbackReceiver
 
     public void OnAfterDeserialize()
     {
+        ResetVariable();
+    }
+
+    public void ResetVariable()
+    {
         RuntimeValue = initialValue;
     }
 }
