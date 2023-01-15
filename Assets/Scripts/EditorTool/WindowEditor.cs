@@ -2,10 +2,11 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-[CustomEditor(typeof(WindowMono))]
 public class WindowEditor : EditorWindow
 {
     [SerializeField] private VisualTreeAsset UXMLFile;
+
+    public float test = 2.5f;
 
     [MenuItem("Tools/Game Editor")]
     public static void ShowWindow()
@@ -13,7 +14,7 @@ public class WindowEditor : EditorWindow
         WindowEditor window = GetWindow<WindowEditor>();
         window.titleContent = new GUIContent("Game Editor");
     }
-
+    
     private void CreateGUI()
     {
         UXMLFile.CloneTree(rootVisualElement);
