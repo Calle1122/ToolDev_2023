@@ -16,6 +16,9 @@ public class InspectorEditor : Editor
     public override VisualElement CreateInspectorGUI()
     {
         var root = new VisualElement();
+
+        m_UXML = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/UIBuilder/InspectorEditor.uxml");
+        
         m_UXML.CloneTree(root);
 
         root.Query<ToolbarButton>("settings").First().clicked += Test;

@@ -1,0 +1,37 @@
+.EditorWindowStyle {
+    flex-grow: 1;
+    background-color: rgb(31, 30, 34);
+    background-image: url('project://database/Assets/Sprites/background.png?fileID=2800000&guid=70f2f06e98d028446bf57c9b39da8896&type=3#background');
+    -unity-background-image-tint-color: rgba(183, 172, 255, 0.2);
+    flex-direction: row;
+    width: auto;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: center;
+    align-self: center;
+}
+
+TextField > TextInput {
+    background-color: rgb(40, 37, 53);
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    font-size: 15px;
+    -unity-text-align: upper-center;
+    border-left-color: rgb(22, 21, 24);
+    border-right-color: rgb(22, 21, 24);
+    border-top-color: rgb(22, 21, 24);
+    border-bottom-color: rgb(22, 21, 24);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    margin-left: 5px;
+}
+
+Slider > Tracker {
+    background-color: rgb(40, 37, 255);
+}
+
+Label {
+    margin-right: -2.5px;
+}
