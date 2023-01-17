@@ -7,6 +7,31 @@ public class IceAsteroid : AsteroidBase
     
     [SerializeField] private GameObject icePlosionParticle, underIceParticle, iceRadius;
     
+    private Rigidbody2D _rb;
+
+    private void Awake()
+    {
+        _rb = GetComponent<Rigidbody2D>();
+    }
+    
+    private void Start()
+    {
+        Vector2 dir = GameObject.Find("MidPoint").transform.position - transform.position;
+        dir = dir.normalized;
+        
+        _rb.AddForce(dir * gameSettings.iceLaunchSpeed, ForceMode2D.Impulse);
+    }
+    
+    private void Update()
+    {
+        transform.Rotate(Vector3.back, gameSettings.iceRotationSpeed * Time.deltaTime);
+    }
+    
+    private void FixedUpdate()
+    {
+        _rb.velocity = Vector2.ClampMagnitude(_rb.velocity, gameSettings.iceMaxSpeed);
+    }
+    
     protected override void OnCollideWithPlayer()
     {
         takeDamageEvent.Raise();

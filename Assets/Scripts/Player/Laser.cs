@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
-    [SerializeField] private ShipConfigs shipSettings;
+    [SerializeField] private GameSettings gameSettings;
     
     private Rigidbody2D _rb;
 
@@ -21,7 +21,7 @@ public class Laser : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rb.velocity = Vector2.ClampMagnitude(_rb.velocity, shipSettings.laserMaxSpeed.RuntimeValue);
+        _rb.velocity = Vector2.ClampMagnitude(_rb.velocity, gameSettings.laserMaxSpeed);
     }
 
     private void OnTriggerEnter2D(Collider2D col)

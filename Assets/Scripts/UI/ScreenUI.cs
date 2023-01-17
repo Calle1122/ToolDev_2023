@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class ScreenUI : MonoBehaviour
 {
-    [SerializeField] private ShipConfigs shipSettings;
-
+    [SerializeField] private GameSettings settings;
+    
     [SerializeField] private TextMeshProUGUI healthTxt, scoreTxt, gameOverScoreTxt;
 
     [SerializeField] private GameObject gameOverContainer;
@@ -22,12 +22,12 @@ public class ScreenUI : MonoBehaviour
 
     public void UpdateHealthTxt()
     {
-        healthTxt.text = "Health: " + shipSettings.health.RuntimeValue;
+        healthTxt.text = "Health: " + settings.runtimeHealth;
     }
 
     public void AddScore()
     {
-        _score += 10;
+        _score += settings.pointsPerAsteroid;
 
         scoreTxt.text = "Score: " + _score;
     }

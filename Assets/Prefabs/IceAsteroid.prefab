@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbeb8cc7e3c269b4bbd27e1b7c92720a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidSettings: {fileID: 11400000, guid: efbcb89b069f8254091bfa02b3795cee, type: 2}
+  gameSettings: {fileID: 11400000, guid: 5fccf6f6fb6cf64498d0034cc00fb4c9, type: 2}
   asteroidDestroyed: {fileID: 11400000, guid: 39e8a8a2fa2daea43a319c17a58e5a95, type: 2}
   takeDamageEvent: {fileID: 11400000, guid: e3f1263bf7cf369449c6bc65df603d49, type: 2}
   icePlosionParticle: {fileID: 8022750425248081878, guid: 57d19647bce22f44891775f6744ca9d6, type: 3}

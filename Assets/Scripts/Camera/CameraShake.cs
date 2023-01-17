@@ -8,6 +8,8 @@ public class CameraShake : MonoBehaviour
     public AnimationCurve shakeCurve;
     public float duration = .2f;
 
+    [SerializeField] private GameSettings gameSettings;
+
     private void Update()
     {
         if (shouldShake)
@@ -26,7 +28,7 @@ public class CameraShake : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             float strength = shakeCurve.Evaluate(elapsedTime / duration);
-            transform.position = startPos + Random.insideUnitSphere * strength;
+            transform.position = (startPos + Random.insideUnitSphere * strength) * gameSettings.cameraShakeModifier;
             yield return null;
         }
 

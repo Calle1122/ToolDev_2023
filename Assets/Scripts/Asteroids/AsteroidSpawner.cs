@@ -5,13 +5,15 @@ public class AsteroidSpawner : MonoBehaviour
 {
     [SerializeField] private SpawnerConfigs spawnSettings;
 
+    [SerializeField] private GameSettings gameSettings;
+
     private float _spawnTimer = 0f;
 
     private void Update()
     {
         _spawnTimer += Time.deltaTime;
 
-        if (_spawnTimer >= spawnSettings.secondsBetweenSpawns.RuntimeValue)
+        if (_spawnTimer >= gameSettings.secondsBetweenSpawns)
         {
             _spawnTimer = 0f;
 

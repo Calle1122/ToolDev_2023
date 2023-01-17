@@ -171,4 +171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fdfecd6a2923434681f0375aafd4a16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipSettings: {fileID: 11400000, guid: 60655a816fca884458c8c1bd282f61e3, type: 2}
+  gameSettings: {fileID: 11400000, guid: 5fccf6f6fb6cf64498d0034cc00fb4c9, type: 2}

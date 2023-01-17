@@ -7,7 +7,7 @@ public class Ship : MonoBehaviour
 {
     [SerializeField] private EventBase deathEvent;
 
-    [SerializeField] private ShipConfigs shipSettings;
+    [SerializeField] private GameSettings gameSettings;
 
     [SerializeField] private GameObject bigFlame, lFlame, rFlame;
 
@@ -15,9 +15,9 @@ public class Ship : MonoBehaviour
     
     public void TakeDamage()
     {
-        shipSettings.health.RuntimeValue--;
+        gameSettings.runtimeHealth--;
 
-        if (shipSettings.health.RuntimeValue <= 0)
+        if (gameSettings.runtimeHealth <= 0)
         {
             deathEvent.Raise();
             Destroy(gameObject);
@@ -73,7 +73,7 @@ public class Ship : MonoBehaviour
             SteerRight();
         }
 
-        _rigidbody.velocity = Vector2.ClampMagnitude(_rigidbody.velocity, shipSettings.maxSpeed.RuntimeValue);
+        _rigidbody.velocity = Vector2.ClampMagnitude(_rigidbody.velocity, gameSettings.shipMaxSpeed);
 
     }
 
@@ -86,27 +86,21 @@ public class Ship : MonoBehaviour
 
     public void ResetShipRuntimeVariables()
     {
-        shipSettings.damage.RuntimeValue = shipSettings.damage.initialValue;
-        shipSettings.health.RuntimeValue = shipSettings.health.initialValue;
-        shipSettings.laserSpeed.RuntimeValue = shipSettings.laserSpeed.initialValue;
-        shipSettings.maxSpeed.RuntimeValue = shipSettings.maxSpeed.initialValue;
-        shipSettings.moveSpeed.RuntimeValue = shipSettings.moveSpeed.initialValue;
-        shipSettings.rotationSpeed.RuntimeValue = shipSettings.rotationSpeed.initialValue;
-        shipSettings.laserMaxSpeed.RuntimeValue = shipSettings.laserMaxSpeed.initialValue;
+        gameSettings.runtimeHealth = gameSettings.shipHealth;
     }
     
     public void Throttle()
     {
-        _rigidbody.AddForce(transform.up * shipSettings.moveSpeed.RuntimeValue, ForceMode2D.Force);
+        _rigidbody.AddForce(transform.up * gameSettings.shipAcceleration, ForceMode2D.Force);
     }
 
     public void SteerLeft()
     {
-        _rigidbody.AddTorque(shipSettings.rotationSpeed.RuntimeValue, ForceMode2D.Force);
+        _rigidbody.AddTorque(gameSettings.shipRotation, ForceMode2D.Force);
     }
 
     public void SteerRight()
     {
-        _rigidbody.AddTorque(-shipSettings.rotationSpeed.RuntimeValue, ForceMode2D.Force);
+        _rigidbody.AddTorque(-gameSettings.shipRotation, ForceMode2D.Force);
     }
 }

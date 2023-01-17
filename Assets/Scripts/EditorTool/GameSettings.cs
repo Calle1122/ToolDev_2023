@@ -35,4 +35,9 @@ public class GameSettings : ScriptableObject
     //Game Settings
     public float secondsBetweenSpawns;
     public int pointsPerAsteroid;
+    public float cameraShakeModifier;
+    
+    
+    //Runtime Variables
+    public int runtimeHealth;
 }

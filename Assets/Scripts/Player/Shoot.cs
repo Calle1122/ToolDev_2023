@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    [SerializeField] private ShipConfigs shipSettings;
+    [SerializeField] private GameSettings gameSettings;
     [SerializeField] private GameObject laserPrefab;
     
     void Update()
@@ -21,7 +21,7 @@ public class Shoot : MonoBehaviour
         
         GameObject newLaser = Instantiate(laserPrefab, spawnPoint, Quaternion.identity);
         
-        newLaser.GetComponent<Rigidbody2D>().AddForce(transform.up * shipSettings.laserSpeed.RuntimeValue, ForceMode2D.Impulse);
+        newLaser.GetComponent<Rigidbody2D>().AddForce(transform.up * gameSettings.laserAcceleration, ForceMode2D.Impulse);
         
         Destroy(newLaser, 3f);
     }

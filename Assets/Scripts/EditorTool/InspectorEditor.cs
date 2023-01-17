@@ -20,7 +20,7 @@ public class InspectorEditor : Editor
         m_UXML = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/UIBuilder/InspectorEditor.uxml");
         
         m_UXML.CloneTree(root);
-
+        
         root.Query<ToolbarButton>("settings").First().clicked += Test;
 
         var foldout = new Foldout() { viewDataKey = "InspectorEditorFullFoldout", text = "Full Editor" };

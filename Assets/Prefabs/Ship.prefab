@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathEvent: {fileID: 11400000, guid: 9d3585564df933040909a805641f567e, type: 2}
-  shipSettings: {fileID: 11400000, guid: 60655a816fca884458c8c1bd282f61e3, type: 2}
+  gameSettings: {fileID: 11400000, guid: 5fccf6f6fb6cf64498d0034cc00fb4c9, type: 2}
   bigFlame: {fileID: 7020063486534759885}
   lFlame: {fileID: 5928961005912385080}
   rFlame: {fileID: 1792454461506086199}
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7398339514c57344998e7897aca0e82e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipSettings: {fileID: 11400000, guid: 60655a816fca884458c8c1bd282f61e3, type: 2}
+  gameSettings: {fileID: 11400000, guid: 5fccf6f6fb6cf64498d0034cc00fb4c9, type: 2}
   laserPrefab: {fileID: 1983617048518225776, guid: d3a7e1e016da4b9429457eb8ee7eaeab, type: 3}
 --- !u!1 &5928961005912385080
 GameObject:
