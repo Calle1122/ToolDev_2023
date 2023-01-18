@@ -10,6 +10,8 @@ public class Laser : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+
+        GetComponent<SpriteRenderer>().color = gameSettings.laserColor;
     }
 
     private void Update()

@@ -2337,6 +2337,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 2009693625771136140, guid: bed82be2b687b654c8f47974264a67f4, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009693625771136140, guid: bed82be2b687b654c8f47974264a67f4, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009693625771136140, guid: bed82be2b687b654c8f47974264a67f4, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2009693625771136141, guid: bed82be2b687b654c8f47974264a67f4, type: 3}
       propertyPath: m_RootOrder
       value: -1

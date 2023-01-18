@@ -18,18 +18,18 @@ MonoBehaviour:
   shipAcceleration: 6.2
   shipRotation: 7.5
   shipHealth: 15
-  hullColor: {r: 0.5121039, g: 0.6429334, b: 0.7924528, a: 0}
-  laserColor: {r: 0.8018868, g: 0.22793144, b: 0.19290671, a: 0}
-  normalLaunchSpeed: 3.56
-  normalMaxSpeed: 5.91
-  normalRotationSpeed: 75.5
+  hullColor: {r: 0.66131186, g: 0.71744764, b: 0.7264151, a: 1}
+  laserColor: {r: 1, g: 0.3160377, b: 0.59309447, a: 1}
+  normalLaunchSpeed: 1.53
+  normalMaxSpeed: 2.4
+  normalRotationSpeed: 100
   fireLaunchSpeed: 1.36
-  fireMaxSpeed: 2.92
-  fireRotationSpeed: 22.9
-  iceLaunchSpeed: 4.49
-  iceMaxSpeed: 6.19
-  iceRotationSpeed: 55.1
+  fireMaxSpeed: 2.23
+  fireRotationSpeed: 100
+  iceLaunchSpeed: 1.61
+  iceMaxSpeed: 2.58
+  iceRotationSpeed: 100
   secondsBetweenSpawns: 1.75
   pointsPerAsteroid: 50
   cameraShakeModifier: 1
-  runtimeHealth: 15
+  runtimeHealth: 2

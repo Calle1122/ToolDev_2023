@@ -10,6 +10,8 @@ public class Ship : MonoBehaviour
     [SerializeField] private GameSettings gameSettings;
 
     [SerializeField] private GameObject bigFlame, lFlame, rFlame;
+    
+    [SerializeField] private GameObject colorLaserBall;
 
     private Rigidbody2D _rigidbody;
     
@@ -82,6 +84,9 @@ public class Ship : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
 
         ResetShipRuntimeVariables();
+
+        GetComponent<SpriteRenderer>().color = gameSettings.hullColor;
+        colorLaserBall.GetComponent<SpriteRenderer>().color = gameSettings.laserColor;
     }
 
     public void ResetShipRuntimeVariables()
