@@ -12,24 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d42ea0fc955714094e3edd2aac8317, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
-  laserMaxSpeed: 12.84
-  laserAcceleration: 10.55
-  shipMaxSpeed: 7.4
-  shipAcceleration: 6.2
-  shipRotation: 7.5
-  shipHealth: 15
-  hullColor: {r: 0.66131186, g: 0.71744764, b: 0.7264151, a: 1}
-  laserColor: {r: 1, g: 0.3160377, b: 0.59309447, a: 1}
-  normalLaunchSpeed: 1.53
-  normalMaxSpeed: 2.4
+  laserMaxSpeed: 17.5
+  laserAcceleration: 12.5
+  shipMaxSpeed: 5
+  shipAcceleration: 3.5
+  shipRotation: 4
+  shipHealth: 10
+  hullColor: {r: 0.64642453, g: 0.754717, b: 0.60875756, a: 1}
+  laserColor: {r: 0.8301887, g: 0.3485226, b: 0.41095987, a: 1}
+  normalLaunchSpeed: 2
+  normalMaxSpeed: 3.5
   normalRotationSpeed: 100
-  fireLaunchSpeed: 1.36
-  fireMaxSpeed: 2.23
-  fireRotationSpeed: 100
-  iceLaunchSpeed: 1.61
-  iceMaxSpeed: 2.58
-  iceRotationSpeed: 100
-  secondsBetweenSpawns: 1.75
-  pointsPerAsteroid: 50
+  fireLaunchSpeed: 1.5
+  fireMaxSpeed: 3
+  fireRotationSpeed: 85
+  iceLaunchSpeed: 1.25
+  iceMaxSpeed: 2.5
+  iceRotationSpeed: 75
+  secondsBetweenSpawns: 1.5
+  pointsPerAsteroid: 25
   cameraShakeModifier: 1
-  runtimeHealth: 2
+  topSpawn: 1
+  bottomSpawn: 1
+  leftSpawn: 1
+  rightSpawn: 1
+  runtimeHealth: 10

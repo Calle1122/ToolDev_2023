@@ -25,8 +25,23 @@ MonoBehaviour:
   - {x: 13, y: -4, z: 0}
   - {x: -13, y: 4, z: 0}
   - {x: -13, y: -4, z: 0}
+  topPoints:
+  - {x: 0, y: 7.5, z: 0}
+  - {x: -7.5, y: 7.5, z: 0}
+  - {x: 7.5, y: 7.5, z: 0}
+  bottomPoints:
+  - {x: 0, y: -7.5, z: 0}
+  - {x: -7.5, y: -7.5, z: 0}
+  - {x: 7.5, y: -7.5, z: 0}
+  leftPoints:
+  - {x: -13, y: 0, z: 0}
+  - {x: -13, y: 4, z: 0}
+  - {x: -13, y: -4, z: 0}
+  rightPoints:
+  - {x: 13, y: 0, z: 0}
+  - {x: 13, y: 4, z: 0}
+  - {x: 13, y: -4, z: 0}
   possibleAsteroids:
   - {fileID: 3314186860135275697, guid: d1b8faa49e6199048bad20c93be1bdcc, type: 3}
   - {fileID: 3314186860135275697, guid: 9b82efbb549289848855372b5175fb60, type: 3}
   - {fileID: 3314186860135275697, guid: 1fb424a85adb3494eb63e15b1ba4568b, type: 3}
-  secondsBetweenSpawns: {fileID: 11400000, guid: 6a95e1e587ac69740815abf843629330, type: 2}
